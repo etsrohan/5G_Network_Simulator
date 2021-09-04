@@ -1,0 +1,47 @@
+Identity Response
+
+---------------------------------------------------------
+Security Header - 4 Bit | Protocol Discriminator - 4 Bit
+---------------------------------------------------------
+Identity Response - 86
+---------------------------------------------------------
+Mobile-Identity
+---------------------------------------------------------
+
+0 < IMSI / TMSI / IMEI / IMEISV>
+
+1st Octet
+0000001 IMSI
+0000010 TMSI
+0000011 IMEI
+0000100 IMEISV
+
+2nd Octet - Length
+IMST - 8
+TMST - 4
+IMEI - 8
+IMEISV - 8
+
+3rd Octet onwards
+IMST - 15 Digit / 8 Octets
+TMSI - 4 Octet
+IMEI - 15 Digit / 8 Octets
+IMEISV - 16 Digits
+
+
+----------IMSI-----------------
+MCC    - 404
+MNC    - 01
+MSISDN - 8826900551
+-------------------------------
+
+IMEI - 83456 67456 32145
+IMEISV - 83456 67456 321456
+IMSI - 404 01 8826900551
+
+
+IMST[8]
+TMSI[4]
+IMEI[8]
+IMEISV[8]
+
